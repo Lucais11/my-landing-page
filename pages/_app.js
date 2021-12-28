@@ -1,7 +1,19 @@
-import '../styles/globals.css'
+import Layout from "../components/Header";
+import AboutMe from "../components/AboutMe";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = () => {
+  return (
+    <Container
+      sx={{
+        height: "100vh",
+      }}
+    >
+      <Layout />
+      <AboutMe />
+    </Container>
+  );
+};
 
-export default MyApp
+export default App;
