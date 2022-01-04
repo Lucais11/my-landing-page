@@ -1,18 +1,12 @@
-import Layout from "../components/Header";
-import AboutMe from "../components/AboutMe";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
+import 'modern-css-reset'
+import "../styles/index.css"
+import GradientPage from '../components/gradientPage';
 
-const App = () => {
+const App = ({ Component, pageProps }) => {
   return (
-    <Container
-      sx={{
-        height: "100vh",
-      }}
-    >
-      <Layout />
-      <AboutMe />
-    </Container>
+    <GradientPage>
+      <Component {...pageProps}/>
+    </GradientPage>
   );
 };
 
